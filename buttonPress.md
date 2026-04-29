@@ -6,12 +6,15 @@ Let's get started!
 
 ## Step 1 @fullscreen
 
-Welcome! Place the ``||basic:show string||`` block in the ``||basic:on start||`` slot to scroll your name.
+Welcome! Place the ``||basic.showIcon||`` block in the ``||input.onButtonPressed||`` change the icon to something you like.
 
 ```blocks
-basic.showIcon();
-input.onButtonPressed()
-
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Heart)
+})
+basic.forever(function () {
+	
+})
 ```
 
 ## Step 2
